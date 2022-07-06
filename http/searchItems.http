@@ -1,0 +1,3 @@
+### Search items
+GET http://localhost:3000/api/items?q={{query}}
+Accept: application/json

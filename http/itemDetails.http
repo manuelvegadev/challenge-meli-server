@@ -1,0 +1,3 @@
+### Get item details by ID
+GET http://localhost:3000/api/items/{{id}}
+Accept: application/json
