@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "babel src -d build",
     "dev": "nodemon src/app.js --exec babel-node",
