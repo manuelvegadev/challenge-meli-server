@@ -41,7 +41,7 @@ class MeLiApi_class {
                         amount: item['price'],
                         decimals: 2 // ...?
                     },
-                    picture: item['thumbnail'],
+                    picture: item['thumbnail'].replace('http://', 'https://'),
                     condition: item['condition'],
                     free_shipping: item['shipping']['free_shipping']
                 });
