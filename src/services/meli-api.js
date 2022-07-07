@@ -27,7 +27,7 @@ class MeLiApi_class {
             
             categories: searchResults['filters'].find(filter => {
                 return filter['id'] === 'category';
-            })['values'][0]['path_from_root'].map(path => path['name']),
+            })?.['values'][0]['path_from_root'].map(path => path['name']) || [],
             
             items: Array.from({length: 4}).map(function (_, index) {
                 
