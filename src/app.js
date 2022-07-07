@@ -9,5 +9,7 @@ const app = express();
 app.use(express.json());
 app.use('/api', apiRoutes);
 
-app.listen(3000);
-console.log('ℹ️ Server listen on port', 3000);
+const port = 3002;
+
+app.listen(port);
+console.log('ℹ️ Server listen on port', port);
